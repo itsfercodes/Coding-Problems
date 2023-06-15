@@ -7,7 +7,7 @@ public class URLify {
 
   // Time complexity: O(n)
   // Space complexity: O(n)
-  static String Solution1(char[] str, int trueLentgh) {
+  static String solution1(char[] str, int trueLentgh) {
 
     String url = "";
 
@@ -26,7 +26,7 @@ public class URLify {
   // Space complexity: O(1)
   // For this we require that the string is converted to char array in order to be
   // manipulated in place
-  static String Solution2(char[] str, int trueLength) {
+  static String solution2(char[] str, int trueLength) {
     int actualLengthPointer = str.length - 1;
 
     // True length will keep track of the position of the last char of the string
@@ -52,7 +52,7 @@ public class URLify {
   }
 
   public static void main(String[] args) {
-    System.out.println(Solution1("Mr John Smith    ".toCharArray(), 13));
-    System.out.println(Solution2("Mr John Smith    ".toCharArray(), 13));
+    System.out.println(solution1("Mr John Smith    ".toCharArray(), 13));
+    System.out.println(solution2("Mr John Smith    ".toCharArray(), 13));
   }
 }
