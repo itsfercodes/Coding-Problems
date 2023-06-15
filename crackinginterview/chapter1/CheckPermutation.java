@@ -30,7 +30,8 @@ public class CheckPermutation {
 
   // Time complexity: O(n)
   // Space complexity: O(n)
-  // To improve we can use an array[128] and decrement the value
+  // To improve we can use an array[128] and decrement the value of the repeated
+  // characters
   static boolean solution2(String word1, String word2) {
     if (word1.length() != word2.length()) {
       return false;
