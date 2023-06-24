@@ -24,7 +24,8 @@ public class PalindromePermutation {
       }
     }
 
-    for (int currentValue : lookup.values()) {
+    for (Map.Entry<Character, Integer> currentEntry : lookup.entrySet()) {
+      int currentValue = currentEntry.getValue();
       if (currentValue % 2 == 1 && oddFound)
         return false;
       if (currentValue % 2 == 1)
