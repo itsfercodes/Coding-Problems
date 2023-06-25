@@ -13,7 +13,7 @@ public class MoveZeroes {
 
     for (int i = 0; i < nums.length; i++) {
       if (nums[i] == 0) {
-        zeroCount++;
+        zeroCount += 1;
       } else {
         result[indexResult] = nums[i];
         indexResult++;
@@ -34,7 +34,7 @@ public class MoveZeroes {
   // right, left pointer will left behind all the values that are already moved to
   // the left which are already "sorted", and when a non zero is found the
   // position at the pointer will be replaced with the value found and the
-  // position of the value found will be 0. THis way we will keep track of the 
+  // position of the value found will be 0. THis way we will keep track of the
   // first zero we find after doing a swap (which means the first zero after the
   // "sorting" the left part)
   static int[] solution2(int[] nums) {
